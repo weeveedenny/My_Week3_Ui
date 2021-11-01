@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My_Week2_Ui</string>
+    <string name="edittext_hint"><font size="12">Search</font></string>
+</resources>

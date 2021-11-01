@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="SpeakableTextPresentCheck">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/boxes"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.916"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.075"
+            app:srcCompat="@drawable/ic_app_bar_group" />
+
+        <ImageView
+            android:id="@+id/heart"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/search_item"
+            app:layout_constraintEnd_toStartOf="@+id/boxes"
+            app:layout_constraintHorizontal_bias="0.092"
+            app:layout_constraintStart_toEndOf="@+id/Greeting"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_hearts1" />
+
+        <TextView
+            android:id="@+id/Greeting"
+            android:layout_width="154dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="36dp"
+            android:text="Good morning! "
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            app:layout_constraintBottom_toTopOf="@+id/search_item"
+            app:layout_constraintEnd_toEndOf="@+id/boxes"
+            app:layout_constraintHorizontal_bias="0.115"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.219" />
+
+        <EditText
+            android:id="@+id/search_item"
+            android:layout_width="345dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/items"
+            android:hint="@string/edittext_hint"
+            android:paddingLeft="15dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/boxes"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/Greeting"
+            app:layout_constraintTop_toBottomOf="@+id/boxes"
+            app:layout_constraintVertical_bias="0.015"
+            android:inputType="text" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
