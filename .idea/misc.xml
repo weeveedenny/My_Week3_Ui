@@ -5,6 +5,8 @@
       <map>
         <entry key="app/src/main/res/drawable/ic_app_bar_group.xml" value="0.20462962962962963" />
         <entry key="app/src/main/res/drawable/items.xml" value="0.15555555555555556" />
+        <entry key="app/src/main/res/drawable/items2.xml" value="0.290625" />
+        <entry key="app/src/main/res/drawable/items3.xml" value="0.290625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/profile_pic.xml" value="0.23148148148148148" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/search_icon.xml" value="0.13333333333333333" />
