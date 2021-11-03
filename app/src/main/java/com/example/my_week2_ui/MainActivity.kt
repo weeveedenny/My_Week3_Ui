@@ -11,6 +11,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         supportActionBar?.hide()
 
+//    initializes night mode
+        var switchButt = findViewById<Switch>(R.id.mySwitch)
+        switchButt.setOnClickListener {
+            if (switchButt.isChecked) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            }
+        }
+
 
     }
 }
